@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SAC-Mariana</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="editar">Editar</string>
+    <string name="edtexc">Editar/Excluir</string>
+    <string name="listar">Listar</string>
+    <string name="excluir">Excluir</string>
+    <string name="produto">Produto</string>
+    <string name="doador">Doador</string>
+    <string name="doacao">Doação</string>
+</resources>

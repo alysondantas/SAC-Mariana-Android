@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.alysondantas.sac_mariana.CadastrarDoadorActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editTextNome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNumcad"
+        android:layout_below="@+id/editTextNome"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextNome"
+        android:text="NumCadastro" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDtNasc"
+        android:layout_below="@+id/editTextNumcad"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextNumcad"
+        android:text="Data nascimento" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTipo"
+        android:layout_below="@+id/editTextDtNasc"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextDtNasc"
+        android:text="Tipo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Endereço:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/editTextTipo"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPais"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextTipo"
+        android:text="Pais" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUf"
+        android:layout_below="@+id/editTextPais"
+        android:layout_alignParentStart="true"
+        android:text="UF"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCidade"
+        android:layout_alignBottom="@+id/editTextUf"
+        android:layout_alignEnd="@+id/editTextPais"
+        android:layout_toEndOf="@+id/editTextUf"
+        android:text="Cidade" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNum"
+        android:layout_below="@+id/editTextUf"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextUf"
+        android:text="Num" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRua"
+        android:layout_alignBottom="@+id/editTextNum"
+        android:layout_alignEnd="@+id/editTextCidade"
+        android:layout_alignStart="@+id/editTextCidade"
+        android:text="Rua" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextBairro"
+        android:layout_below="@+id/editTextNum"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextRua"
+        android:text="Bairro" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCep"
+        android:layout_below="@+id/editTextBairro"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextBairro"
+        android:text="CEP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar"
+        android:id="@+id/button"
+        android:layout_below="@+id/editTextCep"
+        android:layout_alignParentStart="true"
+        android:onClick="cadastrarDoador1"/>
+</RelativeLayout>
